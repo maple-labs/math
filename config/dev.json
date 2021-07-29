@@ -1,0 +1,37 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/SafeMathInt.sol": {
+      "urls": ["contracts/SafeMathInt.sol"]
+    },
+    "contracts/SafeMathUint.sol": {
+      "urls": ["contracts/SafeMathUint.sol"]
+    },
+    "contracts/test/SafeMathInt.t.sol": {
+      "urls": ["contracts/test/SafeMathInt.t.sol"]
+    },
+    "contracts/test/SafeMathUint.t.sol": {
+      "urls": ["contracts/test/SafeMathUint.t.sol"]
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "metadata",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.gasEstimates"
+        ],
+        "": ["ast"]
+      }
+    },
+    "metadata": {
+      "bytecodeHash": "none"
+    }
+  }
+}
