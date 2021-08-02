@@ -7,13 +7,13 @@ import { SafeMathUint } from "../SafeMathUint.sol";
 
 contract SafeMathIntTest is DSTest {
 
-    function test_toUint256Safe(uint256 x) public {
+    function test_toInt256Safe(uint256 x) public {
         if (x > uint256(type(int256).max)) return;
 
         assertEq(SafeMathUint.toInt256Safe(x), int256(x));
     }
 
-    function testFail_toUint256Safe(uint256 x) public {
+    function testFail_toInt256Safe(uint256 x) public {
         require(x > uint256(type(int256).max), "must be out of bounds");
 
         assertEq(SafeMathUint.toInt256Safe(x), int256(x));
