@@ -1,4 +1,4 @@
-all    :; dapp build
-clean  :; dapp clean
-test   :; dapp test
-deploy :; dapp create Math
+prod    :; ./build.sh -c ./config/prod.json
+dev     :; ./build.sh -c ./config/dev.json
+clean   :; dapp clean
+test    :; ./test.sh
